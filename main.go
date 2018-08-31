@@ -68,7 +68,7 @@ func uploadFile(c *gin.Context) {
 	c.JSON(200, gin.H{
 		"result": err == nil,
 		"msg":    "io.Copy",
-		"path":   path,
+		"path":   "http://118.24.27.231:81/" + path,
 	})
 }
 
